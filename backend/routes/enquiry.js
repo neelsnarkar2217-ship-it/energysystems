@@ -35,7 +35,8 @@ router.post("/enquiry", async (req, res) => {
             `
         };
 
-        await transporter.sendMail(mailOptions);
+        // await transporter.sendMail(mailOptions);
+        console.log("Email skipped for testing");
 
         res.status(201).json({
             success: true,
