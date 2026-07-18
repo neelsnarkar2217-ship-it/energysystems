@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Energy Systems Pune</title>
+  <meta name="description" content="Contact Energy Systems for industrial fabrication, erection, solar EPC, and project management services. Reach us at our Pune office or send us a project enquiry." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* ---- Page Hero ---- */
+    .page-hero {
+      background: var(--navy);
+      padding: 72px 0 64px;
+      position: relative;
+      overflow: hidden;
+    }
+    .page-hero::after {
+      content: '';
+      position: absolute; top: 0; right: 0;
+      width: 38%; height: 100%;
+      background: rgba(46,204,143,0.06);
+      clip-path: polygon(18% 0, 100% 0, 100% 100%, 0% 100%);
+      pointer-events: none;
+    }
+    .page-hero .container { position: relative; z-index: 1; }
+    .page-hero-tag {
+      font-size: 11px; font-weight: 700; letter-spacing: 2.5px;
+      text-transform: uppercase; color: var(--green-light);
+      margin-bottom: 14px; display: block;
+    }
+    .page-hero h1 { font-size: clamp(28px, 4vw, 44px); color: var(--white); margin-bottom: 16px; }
+    .page-hero p { font-size: 17px; color: rgba(255,255,255,0.65); max-width: 560px; line-height: 1.8; }
+    .breadcrumb {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 13px; color: rgba(255,255,255,0.4); margin-bottom: 28px;
+    }
+    .breadcrumb a { color: rgba(255,255,255,0.55); transition: color var(--transition); }
+    .breadcrumb a:hover { color: var(--green-light); }
+    .breadcrumb span { color: var(--green-light); }
+
+    /* ---- Contact Section ---- */
+    .contact-main { padding: var(--section-pad); background: var(--white); }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.35fr;
+      gap: 64px;
+      align-items: start;
+    }
+
+    /* Left column */
+    
+    .contact-info-block {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      padding: 22px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      margin-bottom: 16px;
+      background: var(--off-white);
+      transition: border-color var(--transition), box-shadow var(--transition);
+    }
+    .contact-info-block:hover { border-color: var(--green); box-shadow: var(--shadow-md); }
+    .ci-icon {
+      width: 48px; height: 48px; flex-shrink: 0;
+      background: var(--green-pale);
+      border: 1px solid rgba(13,122,94,0.15);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px;
+    }
+    
+    .ci-label { font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--green); margin-bottom: 5px; }
+    .ci-value { font-size: 14px; color: var(--text-dark); line-height: 1.75; }
+    .ci-value a { color: var(--text-dark); transition: color var(--transition); }
+    .ci-value a:hover { color: var(--green); }
+
+    .waaree-contact-box {
+      background: var(--navy);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      margin-top: 8px;
+      display: flex;
+      gap: 14px;
+      align-items: center;
+    }
+    .waaree-contact-box .wc-icon {
+      font-size: 32px;
+      width: 52px; height: 52px;
+      background: rgba(46,204,143,0.15);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+   
+    .waaree-contact-box .wc-text strong { color: var(--white); font-size: 14px; display: block; margin-bottom: 4px; }
+    .waaree-contact-box .wc-text p { color: rgba(255,255,255,0.55); font-size: 13px; line-height: 1.55; margin: 0; }
+
+    /* Right column - form */
+    .contact-form-wrap {
+      background: var(--off-white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 40px 36px;
+    }
+    .form-heading { font-size: 20px; color: var(--navy); margin-bottom: 6px; }
+    .form-subheading { font-size: 14px; color: var(--text-muted); margin-bottom: 28px; line-height: 1.6; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-group { margin-bottom: 18px; }
+    .form-group label {
+      display: block;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: var(--text-dark);
+      margin-bottom: 7px;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      font-size: 14px;
+      font-family: 'Inter', Arial, sans-serif;
+      color: var(--text-dark);
+      background: var(--white);
+      transition: border-color var(--transition), box-shadow var(--transition);
+      outline: none;
+      appearance: none;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--green);
+      box-shadow: 0 0 0 3px rgba(13,122,94,0.12);
+    }
+    .form-group textarea { resize: vertical; min-height: 120px; }
+    .form-group select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23718096' d='M1 1l5 5 5-5'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; padding-right: 36px; cursor: pointer; }
+    .btn-submit {
+      width: 100%;
+      background: var(--navy);
+      color: var(--white);
+      padding: 15px 24px;
+      border: none;
+      border-radius: var(--radius);
+      font-size: 15px;
+      font-weight: 700;
+      font-family: 'Inter', Arial, sans-serif;
+      cursor: pointer;
+      transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+      margin-top: 6px;
+    }
+    .btn-submit:hover { background: var(--navy-light); transform: translateY(-1px); box-shadow: var(--shadow-md); }
+    .form-note { font-size: 12px; color: var(--text-muted); margin-top: 12px; text-align: center; }
+
+    /* Success message (hidden by default) */
+    .form-success {
+      display: none;
+      background: var(--green-pale);
+      border: 1px solid rgba(13,122,94,0.25);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      margin-top: 16px;
+      font-size: 14px;
+      color: var(--green);
+      text-align: center;
+    }
+
+    /* ---- Map Section ---- */
+    .map-section { padding: 0 0 80px; background: var(--white); }
+   
+    .map-header { margin-bottom: 28px; }
+    .map-header h3 { font-size: 22px; color: var(--navy); margin-bottom: 6px; }
+    .map-header p { font-size: 14px; color: var(--text-muted); }
+    .map-embed {
+      width: 100%; height: 380px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+    .map-embed iframe { width: 100%; height: 100%; border: 0; }
+
+    /* ---- Response time band ---- */
+    .response-band { background: var(--off-white); padding: 48px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .response-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .response-item {
+      display: flex; gap: 16px; align-items: flex-start;
+      padding: 22px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+    }
+    .ri-icon { font-size: 28px; flex-shrink: 0; }
+    .ri-text h4 { font-size: 14px; color: var(--navy); margin-bottom: 5px; }
+    .ri-text p { font-size: 13px; color: var(--text-muted); line-height: 1.65; }
+
+    @media (max-width: 960px) {
+      .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+      .response-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      .form-row { grid-template-columns: 1fr; }
+      .contact-form-wrap { padding: 28px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+
+
+  <!-- NAVBAR -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="Energy Systems Home">
+        <div>
+          <div class="logo-text">ENERG<span>Y</span> SYSTEMS</div>
+          <div class="logo-sub">www.energy-system.in</div>
+        </div>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+            <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li class="has-dropdown">
+          <a href="services.html">Services </a>
+          
+        </li>
+        <li><a href="contact.html" class="active nav-cta">Contact Us</a></li>
+      </ul>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" aria-label="Contact page header">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>&rsaquo;</span>
+        <span>Contact Us</span>
+      </nav>
+      <span class="page-hero-tag">Get In Touch</span>
+      <h1>Let&rsquo;s Talk About<br />Your Next Project.</h1>
+      <p>Whether you have a project brief, a scope question, or just want to understand how we work &mdash; our team is ready to respond within one business day.</p>
+    </div>
+  </section>
+
+  <!-- RESPONSE TIME BAND -->
+  <div class="response-band" aria-label="Response commitments">
+    <div class="container">
+      <div class="response-grid">
+        <div class="response-item">
+          <div class="ri-icon">&#128222;</div>
+          <div class="ri-text">
+            <h4>Call Us Directly</h4>
+            <p>Speak to our team immediately on <a href="tel:+919577477766" style="color:var(--green);">95774 77766</a> or <a href="tel:+919975081858" style="color:var(--green);">99750 81858</a> during business hours.</p>
+          </div>
+        </div>
+        <div class="response-item">
+          <div class="ri-icon">&#9993;</div>
+          <div class="ri-text">
+            <h4>Email Response in 24 hrs</h4>
+            <p>Send your project requirements to <a href="mailto:projects@energy-systems.in" style="color:var(--green);">projects@energy-systems.in</a> and we'll respond within one business day.</p>
+          </div>
+        </div>
+        <div class="response-item">
+          <div class="ri-icon">&#128205;</div>
+          <div class="ri-text">
+            <h4>Visit Our Office</h4>
+            <p>B-411, Guru Nanak Plaza, Kasarwadi, Pune &ndash; 411034, Maharashtra. Monday–Saturday, 9 AM to 6 PM.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT MAIN -->
+  <section class="contact-main" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Left: Info -->
+        <div class="contact-info">
+          <div class="section-header" style="margin-bottom:32px;">
+            <span class="section-tag">Contact Details</span>
+            <h2 id="contact-heading">Reach Us Anytime</h2>
+            <div class="divider"></div>
+          </div>
+
+          <div class="contact-info-block">
+            <div class="ci-icon">&#128222;</div>
+            <div class="ci-text">
+              <div class="ci-label">Phone</div>
+              <div class="ci-value">
+                <a href="tel:+919577477766">+91 95774 77766</a><br />
+                <a href="tel:+919975081858">+91 99750 81858</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-info-block">
+            <div class="ci-icon">&#9993;</div>
+            <div class="ci-text">
+              <div class="ci-label">Email</div>
+              <div class="ci-value">
+                <a href="mailto:green@energy-systems.co.in">green@energy-systems.co.in</a><br />
+                <a href="mailto:projects@energy-systems.in">projects@energy-systems.in</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-info-block">
+            <div class="ci-icon">&#127760;</div>
+            <div class="ci-text">
+              <div class="ci-label">Website</div>
+              <div class="ci-value">
+                <a href="https://www.energysystems.in" target="_blank" rel="noopener">www.energysystems.in</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-info-block">
+            <div class="ci-icon">&#128205;</div>
+            <div class="ci-text">
+              <div class="ci-label">Registered Office</div>
+              <div class="ci-value">
+                B-411, Guru Nanak Plaza,<br />
+                Kasarwadi, Pune &ndash; 411034,<br />
+                Maharashtra, India
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-info-block">
+            <div class="ci-icon">&#128336;</div>
+            <div class="ci-text">
+              <div class="ci-label">Business Hours</div>
+              <div class="ci-value">
+                Monday &ndash; Saturday: 9:00 AM &ndash; 6:00 PM<br />
+                Sunday: Closed
+              </div>
+            </div>
+          </div>
+
+          <div class="waaree-contact-box">
+            <div class="wc-icon">&#9728;&#65039;</div>
+            <div class="wc-text">
+              <strong>Authorized WAAREE Solar Expert Partner</strong>
+              <p>For residential, commercial &amp; industrial solar enquiries, reach us on the same contact details above.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="contact-form-wrap">
+          <h3 class="form-heading">Send Us a Project Enquiry</h3>
+          <p class="form-subheading">Fill in the form below and we&rsquo;ll respond within one business day with relevant information or a call to discuss your requirements.</p>
+
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required />
+              </div>
+              <div class="form-group">
+                <label for="company">Company Name</label>
+                <input type="text" id="company" name="company" placeholder="Your company (optional)" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="service">Service Required</label>
+              <select id="service" name="service">
+                <option value="">Select a service...</option>
+                <option value="fabrication">Fabrication, Erection &amp; Installation</option>
+                <option value="design">Design &amp; Engineering</option>
+                <option value="solar">Solar PV Solutions (WAAREE)</option>
+                <option value="electrical">Electrical &amp; Instrumentation</option>
+                <option value="testing">Testing &amp; Commissioning</option>
+                <option value="turnkey">Turnkey Project Management</option>
+                <option value="other">Other / Not Sure Yet</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="location">Project Location</label>
+              <input type="text" id="location" name="location" placeholder="City, State where the project will be executed" />
+            </div>
+            <div class="form-group">
+              <label for="message">Project Description *</label>
+              <textarea id="message" name="message" placeholder="Briefly describe your project requirements, scope, and any specific timelines or constraints..." required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Send Enquiry &rarr;</button>
+            <p class="form-note">&#128274; Your information is kept confidential and used only to respond to your enquiry.</p>
+            <div class="form-success" id="form-success">
+              &#10003; &nbsp; Thank you! Your enquiry has been received. We&rsquo;ll get back to you within one business day.
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <section class="map-section" aria-label="Office location map">
+    <div class="container">
+      <div class="map-header">
+        <h3>Find Us in Kasarwadi, Pune</h3>
+        <p>B-411, Guru Nanak Plaza, Kasarwadi, Pune &ndash; 411034, Maharashtra</p>
+      </div>
+      <div class="map-embed">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.164!2d73.811!3d18.615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDM2JzU0LjAiTiA3M8KwNDgnMzkuNiJF!5e0!3m2!1sen!2sin!4v1"
+          title="Energy Systems Office Location – Kasarwadi, Pune"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-text" style="color:#fff;">ENERG<span style="color:#2ECC8F;">Y</span> SYSTEMS</div>
+          <p class="footer-desc">Site-driven industrial contractor specializing in Fabrication, Construction, Erection, and Installation of utility and process systems. Authorized WAAREE Solar Expert Partner.</p>
+          <div class="footer-contact">
+            <a href="tel:+919577477766">&#128222; 95774 77766 / 99750 81858</a>
+            <a href="mailto:green@energy-systems.co.in">&#9993; green@energy-systems.co.in</a>
+            <a href="mailto:projects@energy-systems.in">&#9993; projects@energy-systems.in</a>
+            <a href="https://www.energysystems.in">&#127760; www.energysystems.in</a>
+          </div>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Registered Office</h4>
+          <p style="font-size:14px;color:rgba(255,255,255,0.5);line-height:1.85;"><br />Kasarwadi,<br />Pune &ndash; 411034,<br />Maharashtra, India<br>
+          <br> Kiwale,<br>
+  
+  Pune – 411044,<br>
+  Maharashtra, India
+          </p>
+        </div>
+        <div>
+
+<h4>Corporate Office</h4>
+
+<p style="font-size:14px;color:rgba(255,255,255,.6);line-height:1.8;">
+Plot No. 206<br>
+2nd Floor, Mangal Pearl<br>
+Sector No. 4, Moshi, Near Spine Road<br>
+Pimpri Chinchwad, Pune – 412105
+</p>
+</div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 Energy Systems. All rights reserved.</span>
+        <span>Authorized WAAREE Solar Expert Partner</span>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', isOpen);
+    });
+    document.querySelectorAll('.nav-links > li:not(.has-dropdown) a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', false);
+      });
+    });
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.has-dropdown')) {
+        document.querySelectorAll('.has-dropdown').forEach(el => el.classList.remove('open'));
+      }
+      if (!e.target.closest('.has-sub')) {
+        document.querySelectorAll('.has-sub').forEach(el => el.classList.remove('open'));
+      }
+    });
+    document.querySelectorAll('.has-dropdown > a').forEach(a => {
+      a.addEventListener('click', (e) => {
+        if (window.innerWidth <= 640) {
+          e.preventDefault();
+          a.closest('.has-dropdown').classList.toggle('open');
+        }
+      });
+    });
+    document.querySelectorAll('.has-sub').forEach(el => {
+      el.addEventListener('click', (e) => {
+        if (window.innerWidth <= 640) {
+          e.stopPropagation();
+          el.classList.toggle('open');
+        }
+      });
+    });
+  </script>
+
+  <script src="js/contact.js"></script>
+</body>
+</html>
