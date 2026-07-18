@@ -6,8 +6,16 @@ const transporter = require("../config/mail");
 router.post("/enquiry", async (req, res) => {
     try {
 
-        const enquiry = new Enquiry(req.body);
-        await enquiry.save();
+          const enquiry = new Enquiry(req.body);
+
+          console.log("📩 Request Body:", req.body);
+          console.log("📂 Database:", enquiry.db.name);
+          console.log("📁 Collection:", enquiry.collection.name);
+
+          const saved = await enquiry.save();
+
+          console.log("✅ Saved Document:");
+          console.log(saved);
 
         const mailOptions = {
             from: process.env.EMAIL_USER,
