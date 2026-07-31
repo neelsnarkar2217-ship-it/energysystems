@@ -172,12 +172,12 @@
       background: var(--white);
     }
     .service-detail-body h2 {
-      font-size: clamp(18px, 2.2vw, 24px);
+      font-size: clamp(20px, 2.2vw, 30px);
       color: var(--navy);
       margin-bottom: 12px;
     }
     .service-detail-body > p {
-      font-size: 15px;
+      font-size: 19px;
       color: var(--text-body);
       line-height: 1.85;
       margin-bottom: 24px;
@@ -195,7 +195,7 @@
       background: var(--off-white);
       border: 1px solid var(--border);
       border-radius: var(--radius);
-      font-size: 13px;
+      font-size: 22px;
       color: var(--text-body);
       line-height: 1.55;
     }
@@ -225,8 +225,8 @@
     }
     .industry-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--green); }
     .industry-icon { font-size: 36px; margin-bottom: 12px; }
-    .industry-card h4 { font-size: 14px; color: var(--navy); margin-bottom: 6px; }
-    .industry-card p { font-size: 12px; color: var(--text-muted); line-height: 1.6; }
+    .industry-card h4 { font-size: 18px; color: var(--navy); margin-bottom: 6px; }
+    .industry-card p { font-size: 16px; color: var(--text-muted); line-height: 1.6; }
 
     /* ---- Process ---- */
     .process { padding: var(--section-pad); background: var(--navy); }
@@ -272,14 +272,14 @@
       top: -6px; right: calc(50% - 42px);
       background: var(--green);
       color: var(--white);
-      font-size: 10px;
+      font-size: 14px;
       font-weight: 800;
       width: 20px; height: 20px;
       border-radius: 50%;
       display: flex; align-items: center; justify-content: center;
     }
-    .process-step h4 { font-size: 13px; color: var(--white); margin-bottom: 7px; }
-    .process-step p { font-size: 11px; color: rgba(255,255,255,0.5); line-height: 1.65; }
+    .process-step h4 { font-size: 18px; color: var(--white); margin-bottom: 7px; }
+    .process-step p { font-size: 16px; color: rgba(255,255,255,0.5); line-height: 1.65; }
 
     /* CTA Band */
     .cta-band { background: var(--green); padding: 56px 0; }
@@ -460,7 +460,7 @@
     .service-img-wrap {
       overflow: hidden;
       position: relative;
-      min-height: 320px;
+      min-height: 280px;
     }
     .service-img-wrap img {
       width: 100%; height: 100%;
@@ -491,12 +491,12 @@
       background: var(--white);
     }
     .service-detail-body h2 {
-      font-size: clamp(18px, 2.2vw, 24px);
+      font-size: clamp(22px, 2.5vw, 28px);
       color: var(--navy);
       margin-bottom: 12px;
     }
     .service-detail-body > p {
-      font-size: 15px;
+      font-size: 18px;
       color: var(--text-body);
       line-height: 1.85;
       margin-bottom: 24px;
@@ -544,8 +544,8 @@
     }
     .industry-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--green); }
     .industry-icon { font-size: 36px; margin-bottom: 12px; }
-    .industry-card h4 { font-size: 14px; color: var(--navy); margin-bottom: 6px; }
-    .industry-card p { font-size: 12px; color: var(--text-muted); line-height: 1.6; }
+    .industry-card h4 { font-size: 19px; color: var(--navy); margin-bottom: 6px; }
+    .industry-card p { font-size: 16px; color: var(--text-muted); line-height: 1.6; }
 
     /* ---- Process ---- */
     .process { padding: var(--section-pad); background: var(--navy); }
@@ -643,7 +643,7 @@
     <div class="container">
       <a href="index.html" class="logo" aria-label="Energy Systems Home">
         <div>
-          <div class="logo-text">ENERG<span>Y</span> SYSTEMS</div>
+           <img src="images/logo.png" alt="Energy Systems Logo" class="logo-img">
           <div class="logo-sub">www.energy-system.in</div>
         </div>
       </a>
@@ -727,7 +727,7 @@
       
         <div class="service-img-wrap">
        
-          <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=75&fit=crop" alt="Industrial piping fabrication and erection" loading="lazy" />
+          <img src="images/hero1.jpg" alt="Industrial piping fabrication and erection" loading="lazy" />
           <div class="service-img-overlay-full"></div>
           <span class="service-num">explore-></span>
         </div>
@@ -750,7 +750,7 @@
        <a href="solar-projects.html" class="service-link">
       <div class="service-detail-card reverse">
         <div class="service-img-wrap">
-          <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=75&fit=crop" alt="Engineering design and technical drawings" loading="lazy" />
+          <img src="images/residential-solar.png" alt="Engineering design and technical drawings" loading="lazy" />
           <div class="service-img-overlay-full"></div>
           <span class="service-num">explore-></span>
         </div>
@@ -830,49 +830,107 @@
   </section>
 
   <!-- OUR PROCESS -->
-  <section class="process" aria-labelledby="process-heading">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">How We Work</span>
-        <h2 id="process-heading">Our Project Execution Process</h2>
-        <div class="divider"></div>
-        <p>A structured, stage-gated approach that keeps every project on time, on quality, and on budget.</p>
-      </div>
-      <div class="process-steps">
-        <div class="process-step">
-          <div class="step-circle">&#128203;</div>
-          <div class="step-num">1</div>
-          <h4>Scope &amp; Engineering</h4>
-          <p>Site visit, requirement analysis, design, and BOQ preparation.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-circle">&#128230;</div>
-          <div class="step-num">2</div>
-          <h4>Procurement</h4>
-          <p>Material sourcing, vendor selection, and quality inspection at delivery.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-circle">&#128736;</div>
-          <div class="step-num">3</div>
-          <h4>Fabrication</h4>
-          <p>Shop or site fabrication with IBR welders and method statement compliance.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-circle">&#127959;&#65039;</div>
-          <div class="step-num">4</div>
-          <h4>Erection &amp; Installation</h4>
-          <p>On-site erection with daily planning, safety monitoring, and quality checks.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-circle">&#9989;</div>
-          <div class="step-num">5</div>
-          <h4>Testing &amp; Handover</h4>
-          <p>Full system testing, commissioning, and documentation before client handover.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  <section class="clients-section">
 
+    <div class="container">
+
+        <div class="section-header">
+            <span class="section-tag">OUR CLIENTS</span>
+
+            <h2>Trusted by Industry Leaders</h2>
+
+            <p>
+                We are proud to have successfully executed engineering projects
+                for leading manufacturing and industrial organizations across India.
+            </p>
+        </div>
+
+        <div class="logo-slider">
+
+            <div class="logo-track">
+
+                <!-- First Set -->
+
+                <div class="logo-card">
+                    <img src="images/Picture1.jpg" alt="Haldex">
+                </div>
+
+                <div class="logo-card">
+                    <img src="images/Picture2.jpg" alt="Varroc">
+                </div>
+
+                <div class="logo-card">
+                    <img src="images/Picture3.jpg" alt="Porite">
+                </div>
+
+                <div class="logo-card">
+                    <img src="images/Picture4.png" alt="Suzen">
+                </div>
+
+                <div class="logo-card">
+                    <img src="images/Picture5.png" alt="Client 5">
+                </div>
+
+                <div class="logo-card">
+                    <img src="images/Picture6.jpg" alt="Client 6">
+                </div>
+
+                <div class="logo-card">
+                    <img src="images/Picture7.jpg" alt="Client 7">
+                </div>
+
+                <div class="logo-card">
+                    <img src="images/Picture8.jpg" alt="Client 8">
+                </div>
+
+                <div class="logo-card">
+                    <img src="images/Picture9.jpg" alt="Client 9">
+                </div>
+
+                <div class="logo-card">
+                    <img src="images/Picture10.png" alt="Client 10">
+                </div>
+
+                <div class="logo-card">
+                    <img src="images/Picture11.png" alt="Client 11">
+                </div>
+
+                <div class="logo-card">
+                    <img src="images/Picture12.jpg" alt="Client 12">
+                </div>
+
+                <div class="logo-card">
+                    <img src="images/Picture13.png" alt="Client 13">
+                </div>
+
+                <div class="logo-card">
+                    <img src="images/Picture14.jpg" alt="Client 14">
+                </div>
+
+                <div class="logo-card">
+                    <img src="images/Picture15.jpg" alt="Client 15">
+                </div>
+
+                <div class="logo-card">
+                    <img src="images/Picture16.jpg" alt="Client 16">
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+  
+ 
   <!-- CTA BAND -->
   <div class="cta-band" aria-label="Call to action">
     <div class="container">
@@ -892,10 +950,14 @@
           <div class="logo-text" style="color:#fff;">ENERG<span style="color:#2ECC8F;">Y</span> SYSTEMS</div>
           <p class="footer-desc">Site-driven industrial contractor specializing in Fabrication, Construction, Erection, and Installation of utility and process systems. Authorized WAAREE Solar Expert Partner.</p>
           <div class="footer-contact">
-            <a href="tel:+919577477766">&#128222; 95774 77766 / 99750 81858</a>
-            <a href="mailto:green@energy-systems.co.in">&#9993; green@energy-systems.co.in</a>
-            <a href="mailto:projects@energy-systems.in">&#9993; projects@energy-systems.in</a>
-            <a href="https://www.energysystems.in">&#127760; www.energysystems.in</a>
+               <div class="logo-text" style="color:#fff;">For Fabrication,Erection and Installation</div>
+            <a href="tel:+919577477766">&#128222; 99750 81858</a>
+             <a href="mailto:projects@energy-systems.in">&#9993; projects@energy-systems.in</a>
+             <div class="logo-text" style="color:#fff;">For Renewable Energy</div>
+           
+              <a href="tel:+919577477766">&#128222; 7498710108</a>
+              <a href="mailto:green@energy-systems.co.in">&#9993; green@energy-systems.co.in</a>
+            <br><a href="https://www.energysystems.in">&#127760; www.energysystems.in</a>
           </div>
         </div>
         <div>
@@ -909,21 +971,20 @@
         </div>
         <div>
           <h4>Registered Office</h4>
-          <p style="font-size:14px;color:rgba(255,255,255,0.5);line-height:1.85;"><br />Kasarwadi,<br />Pune &ndash; 411034,<br />Maharashtra, India<br>
+          <p style="font-size:17px;color:rgba(255,255,255,0.5);line-height:1.85;"><br />Kasarwadi,<br />Pune &ndash; 411034,<br />Maharashtra, India<br>
           
           <br> Kiwale,<br>
   
-  Pune – 411044,<br>
+  Pune – 412101,<br>
   Maharashtra, India
           </p>
-        </div>
-        <div>
+       
 
-<h4>Corporate Office</h4>
+</br><h4>Corporate Office</h4>
 
-<p style="font-size:14px;color:rgba(255,255,255,.6);line-height:1.8;">
+<p style="font-size:17px;color:rgba(255,255,255,.6);line-height:1.8;">
 Plot No. 206<br>
-2nd Floor, Mangal Pearl<br>
+2nd Floor, Mangal Peavl<br>
 Sector No. 4, Moshi, Near Spine Road<br>
 Pimpri Chinchwad, Pune – 412105
 </p>

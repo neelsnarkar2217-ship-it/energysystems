@@ -28,7 +28,7 @@
     <div class="container">
       <a href="index.html" class="logo" aria-label="Energy Systems Home">
         <div>
-          <div class="logo-text">ENERG<span>Y</span> SYSTEMS</div>
+           <img src="images/logo.png" alt="Energy Systems Logo" class="logo-img">
           <div class="logo-sub">www.energy-system.in</div>
         </div>
       </a>
@@ -48,40 +48,53 @@
     </div>
   </nav>
 
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
   <!-- HERO -->
-  <section class="hero" aria-label="Hero banner">
-    <div class="hero-bg-accent" aria-hidden="true"></div>
-    <div class="container">
-      <div class="hero-grid">
-        <div class="hero-left">
-          <div class="hero-badge">
-            <div class="hero-badge-dot"></div>
-           
-          </div>
-          <h1>Trustworthy Support for<br /><span>Industrial Construction,</span><br />Fabrication &amp; Installation</h1>
-          <p class="hero-desc">Expert execution of structural steel works, piping networks, boilers, process equipment, and Solar EPC projects—delivered with engineering excellence, strict safety standards, and dependable timelines.</p>
-          <div class="hero-buttons">
-            <a href="services.html" class="btn-primary">Explore Services &rarr;</a>
-            <a href="contact.html" class="btn-outline">Get In Touch</a>
-          </div>
-          <div class="hero-trust">
-            <div class="trust-item"><div class="trust-dot"></div> SAFETY</div>
-            <div class="trust-item"><div class="trust-dot"></div> QUALITY</div>
-            <div class="trust-item"><div class="trust-dot"></div> TRUST</div>
-          </div>
+<section class="hero">
+
+    <div class="swiper heroSwiper">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <img src="images/image1.jpg" alt="Hero 1">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="images/image2.jpg" alt="Hero 2">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="images/residential-solar.png" alt="Hero 3">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="images/utility.png" alt="Hero 4">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="images/tanks.png" alt="Hero 5">
+            </div>
+
         </div>
-        <div class="hero-right">
-          <img src="earth_solar_1748325218.webp" alt="Earth" class="rotating-earth">
-        
-      </div>
+
+        <!-- Pagination Dots -->
+        <div class="swiper-pagination"></div>
+
     </div>
-  </section>
+
+</section>
+
+
 
   <!-- STATS BAR -->
   <div class="stats-bar" aria-label="Key statistics">
     <div class="container">
-      <div class="stats-bar-item"><div class="stats-bar-number">15+</div><div class="stats-bar-label">Major Projects</div></div>
-      <div class="stats-bar-item"><div class="stats-bar-number">10,000+</div><div class="stats-bar-label">Mandays Delivered</div></div>
+      <div class="stats-bar-item"><div class="stats-bar-number">20,000+</div><div class="stats-bar-label">Mandays Delivered</div></div>
       <div class="stats-bar-item"><div class="stats-bar-number">8+</div><div class="stats-bar-label">States Covered</div></div>
       <div class="stats-bar-item"><div class="stats-bar-number">IBR</div><div class="stats-bar-label">Certified Welders</div></div>
       <div class="stats-bar-item"><div class="stats-bar-number">ISO</div><div class="stats-bar-label">45001 Safety Standard</div></div>
@@ -154,7 +167,7 @@
 
         <div class="service-card">
           <div class="service-img">
-            <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=75&fit=crop" alt="Industrial piping fabrication and erection" loading="lazy" />
+            <img src="images/piping.jpg" alt="Industrial piping fabrication and erection" loading="lazy" />
             <div class="service-img-overlay"></div>
            
           </div>
@@ -174,7 +187,7 @@
 
         <div class="service-card">
           <div class="service-img">
-            <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&q=75&fit=crop" alt="Engineering design and technical drawings" loading="lazy" />
+            <img src="images/industrial-solar.png" alt="Engineering design and technical drawings" loading="lazy" />
             <div class="service-img-overlay"></div>
             
           </div>
@@ -193,7 +206,7 @@
 
         <div class="service-card">
           <div class="service-img">
-            <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=600&q=75&fit=crop" alt="Electrical panel and instrumentation work" loading="lazy" />
+            <img src="images/hero4.png" alt="Electrical panel and instrumentation work" loading="lazy" />
             <div class="service-img-overlay"></div>
             
           </div>
@@ -210,7 +223,7 @@
 
         <div class="service-card">
           <div class="service-img">
-            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=75&fit=crop" alt="Testing and commissioning of industrial systems" loading="lazy" />
+            <img src="images/testing.jpg" alt="Testing and commissioning of industrial systems" loading="lazy" />
             <div class="service-img-overlay"></div>
             
           </div>
@@ -262,12 +275,16 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="logo-text" style="color:#fff;">ENERG<span style="color:#2ECC8F;">Y</span> SYSTEMS</div>
-          <p class="footer-desc">Site-driven industrial contractor specializing in Fabrication, Construction, Erection, and Installation of utility and process systems. Authorized WAAREE Solar Expert Partner.</p>
+          <p class="footer-desc">Expert execution of structural steel works, piping networks, boilers, process equipment, and Solar EPC projects—delivered with engineering excellence, strict safety standards, and dependable timelines.</p>
           <div class="footer-contact">
-            <a href="tel:+919577477766">&#128222; 95774 77766 / 99750 81858</a>
-            <a href="mailto:green@energy-systems.co.in">&#9993; green@energy-systems.co.in</a>
-            <a href="mailto:projects@energy-systems.in">&#9993; projects@energy-systems.in</a>
-            <a href="https://www.energysystems.in">&#127760; www.energysystems.in</a>
+            <div class="logo-text" style="color:#fff;">For Fabrication,Erection and Installation</div>
+            <a href="tel:+919577477766">&#128222; 99750 81858</a>
+             <a href="mailto:projects@energy-systems.in">&#9993; projects@energy-systems.in</a>
+             <div class="logo-text" style="color:#fff;">For Renewable Energy</div>
+           
+              <a href="tel:+919577477766">&#128222; 7498710108</a>
+              <a href="mailto:green@energy-systems.co.in">&#9993; green@energy-systems.co.in</a>
+            <br><a href="https://www.energysystems.in">&#127760; www.energysystems.in</a>
           </div>
         </div>
         <div>
@@ -281,19 +298,18 @@
         </div>
         <div>
           <h4>Registered Office</h4>
-          <p style="font-size:14px;color:rgba(255,255,255,0.5);line-height:1.85;"><br />Kasarwadi,<br />Pune &ndash; 411034,<br />Maharashtra, India<br>
+          <p style="font-size:18px;color:rgba(255,255,255,0.5);line-height:1.85;"><br />Kasarwadi,<br />Pune &ndash; 411034,<br />Maharashtra, India<br>
           <br> Kiwale,<br>
   
-  Pune – 411044,<br>
+  Pune – 412101,<br>
   Maharashtra, India</p>
-        </div>
-        <div>
+        
 
-<h4>Corporate Office</h4>
+          </br><h4>Corporate Office</h4>
 
-<p style="font-size:14px;color:rgba(255,255,255,.6);line-height:1.8;">
+<p style="font-size:18px;color:rgba(255,255,255,.6);line-height:1.8;">
 Plot No. 206<br>
-2nd Floor, Mangal Pearl<br>
+2nd Floor, Mangal Peavl<br>
 Sector No. 4, Moshi, Near Spine Road<br>
 Pimpri Chinchwad, Pune – 412105
 </p>
@@ -344,5 +360,30 @@ Pimpri Chinchwad, Pune – 412105
       });
     });
   </script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+const swiper = new Swiper(".heroSwiper", {
+
+    loop: true,
+
+    speed: 1200,
+
+    autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+    },
+
+    effect: "slide",
+
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+
+});
+</script>
+
 </body>
 </html>

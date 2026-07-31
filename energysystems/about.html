@@ -24,7 +24,7 @@
       gap: 72px;
       align-items: center;
     }
-    .story-text p { color: var(--text-body); margin-bottom: 18px; font-size: 16px; line-height: 1.85; }
+    .story-text p { color: var(--text-body); margin-bottom: 18px; font-size: 18px; line-height: 1.85; }
     .story-text p:last-child { margin-bottom: 0; }
     .highlight-box {
       background: var(--green-pale);
@@ -34,10 +34,10 @@
       margin: 28px 0 0;
     }
     .highlight-box h4 {
-      font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
+      font-size: 17px; letter-spacing: 2px; text-transform: uppercase;
       color: var(--green); margin-bottom: 10px; font-weight: 700;
     }
-    .highlight-box p { font-size: 15px; color: var(--text-body); line-height: 1.8; margin: 0; }
+    .highlight-box p { font-size: 17px; color: var(--text-body); line-height: 1.8; margin: 0; }
 
     .story-right { display: flex; flex-direction: column; gap: 20px; }
     .milestone-card {
@@ -59,8 +59,8 @@
       min-width: 56px;
       line-height: 1;
     }
-    .milestone-text h4 { font-size: 14px; color: var(--navy); margin-bottom: 5px; }
-    .milestone-text p { font-size: 13px; color: var(--text-muted); line-height: 1.65; }
+    .milestone-text h4 { font-size: 18px; color: var(--navy); margin-bottom: 5px; }
+    .milestone-text p { font-size: 16px; color: var(--text-muted); line-height: 1.65; }
 
     /* ---- Team Strengths ---- */
     .team-strength { padding: var(--section-pad); background: var(--off-white); }
@@ -87,8 +87,8 @@
       margin-bottom: 18px;
       border: 1px solid rgba(13,122,94,0.15);
     }
-    .strength-card h3 { font-size: 16px; color: var(--navy); margin-bottom: 10px; }
-    .strength-card p { font-size: 14px; color: var(--text-muted); line-height: 1.75; }
+    .strength-card h3 { font-size: 18px; color: var(--navy); margin-bottom: 10px; }
+    .strength-card p { font-size: 16px; color: var(--text-muted); line-height: 1.75; }
 
     /* ---- Certifications ---- */
     .certifications { padding: var(--section-pad); background: var(--navy); }
@@ -111,9 +111,9 @@
       transition: background var(--transition), border-color var(--transition);
     }
     .cert-item:hover { background: rgba(46,204,143,0.1); border-color: var(--green-light); }
-    .cert-item-icon { font-size: 36px; margin-bottom: 12px; }
-    .cert-item h4 { font-size: 14px; color: var(--white); margin-bottom: 7px; }
-    .cert-item p { font-size: 12px; color: rgba(255,255,255,0.5); line-height: 1.65; }
+    .cert-item-icon { font-size: 32px; margin-bottom: 12px; }
+    .cert-item h4 { font-size: 18px; color: var(--white); margin-bottom: 7px; }
+    .cert-item p { font-size: 16px; color: rgba(255,255,255,0.5); line-height: 1.65; }
 
     /* ---- Values ---- */
     .values { padding: var(--section-pad); background: var(--white); }
@@ -143,21 +143,21 @@
       min-width: 44px;
       opacity: 0.6;
     }
-    .value-content h4 { font-size: 16px; color: var(--navy); margin-bottom: 8px; }
-    .value-content p { font-size: 14px; color: var(--text-muted); line-height: 1.75; }
+    .value-content h4 { font-size: 19px; color: var(--navy); margin-bottom: 8px; }
+    .value-content p { font-size: 16px; color: var(--text-muted); line-height: 1.75; }
 
     /* CTA band */
     .cta-band { background: var(--green); padding: 56px 0; }
     .cta-band .container { display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap; }
     .cta-band h2 { font-size: clamp(20px, 2.8vw, 28px); color: var(--white); margin-bottom: 8px; }
-    .cta-band p { font-size: 15px; color: rgba(255,255,255,0.8); }
+    .cta-band p { font-size: 16px; color: rgba(255,255,255,0.8); }
     .btn-white {
       background: var(--white);
       color: var(--green);
       padding: 14px 32px;
       border-radius: var(--radius);
       font-weight: 700;
-      font-size: 15px;
+      font-size: 16px;
       white-space: nowrap;
       transition: transform var(--transition), box-shadow var(--transition);
       display: inline-block;
@@ -186,8 +186,7 @@
   <nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="container">
       <a href="index.html" class="logo" aria-label="Energy Systems Home">
-        <div>
-          <div class="logo-text">ENERG<span>Y</span> SYSTEMS</div>
+        <div> <img src="images/logo.png" alt="Energy Systems Logo" class="logo-img">          
           <div class="logo-sub">www.energy-system.in</div>
         </div>
       </a>
@@ -232,7 +231,7 @@
             <div class="divider"></div>
           </div>
           <p>Energy Systems was founded  with a clear purpose: to be a reliable, execution-focused partner for industrial utility and process projects. Starting from Pune, we built our reputation on the ground &mdash; at job sites, not in boardrooms.</p>
-          <p>Over five years, we have grown into a multi-disciplinary team capable of handling complex site conditions, diverse industries, and multi-location projects across PAN India. From mobilization to commissioning, every stage is managed with the same focus on quality and safety.</p>
+          <p>Over the years, we have grown into a multi-disciplinary team capable of handling complex site conditions, diverse industries, and multi-location projects across PAN India. From mobilization to commissioning, every stage is managed with the same focus on quality and safety.</p>
           <p>We are an Authorized Expert Partner of WAAREE Energies, extending our capabilities into solar EPC &mdash; residential, commercial, and industrial &mdash; with the same commitment to technical excellence.</p>
           <div class="highlight-box">
             <h4>Our Mission</h4>
@@ -265,7 +264,7 @@
           <div class="milestone-card">
             
             <div class="milestone-text">
-              <h4>25+ Clients &amp; Counting</h4>
+              <h4>25+ Industrial Clients &amp; Counting</h4>
               <p>Served over 25 clients, completed 15+ major projects, and delivered 10,000+ mandays with a ZERO LTI safety record.</p>
             </div>
           </div>
@@ -412,10 +411,14 @@
           <div class="logo-text" style="color:#fff;">ENERG<span style="color:#2ECC8F;">Y</span> SYSTEMS</div>
           <p class="footer-desc">Site-driven industrial contractor specializing in Fabrication, Construction, Erection, and Installation of utility and process systems. Authorized WAAREE Solar Expert Partner.</p>
           <div class="footer-contact">
-            <a href="tel:+919577477766">&#128222; 95774 77766 / 99750 81858</a>
-            <a href="mailto:green@energy-systems.co.in">&#9993; green@energy-systems.co.in</a>
-            <a href="mailto:projects@energy-systems.in">&#9993; projects@energy-systems.in</a>
-            <a href="https://www.energysystems.in">&#127760; www.energysystems.in</a>
+                <div class="logo-text" style="color:#fff;">For Fabrication,Erection and Installation</div>
+            <a href="tel:+919577477766">&#128222; 99750 81858</a>
+             <a href="mailto:projects@energy-systems.in">&#9993; projects@energy-systems.in</a>
+             <div class="logo-text" style="color:#fff;">For Renewable Energy</div>
+           
+              <a href="tel:+919577477766">&#128222; 7498710108</a>
+              <a href="mailto:green@energy-systems.co.in">&#9993; green@energy-systems.co.in</a>
+            <br><a href="https://www.energysystems.in">&#127760; www.energysystems.in</a>
           </div>
         </div>
         <div>
@@ -429,20 +432,19 @@
         </div>
         <div>
           <h4>Registered Office</h4>
-          <p style="font-size:14px;color:rgba(255,255,255,0.5);line-height:1.85;"><br />Kasarwadi,<br />Pune &ndash; 411034,<br />Maharashtra, India<br>
+          <p style="font-size:16px;color:rgba(255,255,255,0.5);line-height:1.85;"><br />Kasarwadi,<br />Pune &ndash; 411034,<br />Maharashtra, India<br>
           <br> Kiwale,<br>
   
-  Pune – 411044,<br>
+  Pune – 412101,<br>
   Maharashtra, India  
           </p>
-        </div>
-         <div>
+        
 
-<h4>Corporate Office</h4>
+        </br><h4>Corporate Office</h4>
 
-<p style="font-size:14px;color:rgba(255,255,255,.6);line-height:1.8;">
+<p style="font-size:16px;color:rgba(255,255,255,.6);line-height:1.8;">
 Plot No. 206<br>
-2nd Floor, Mangal Pearl<br>
+2nd Floor, Mangal Peavl<br>
 Sector No. 4, Moshi, Near Spine Road<br>
 Pimpri Chinchwad, Pune – 412105
 </p>
